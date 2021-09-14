@@ -1,0 +1,243 @@
+<!--
+
+-->
+<!DOCTYPE HTML>
+<head>
+<title>Home automation</title>
+<link rel="shortcut icon" href="bolt icon.ico" type="image/x-icon"/>
+<script >
+function cDisp(id){
+        var prop=document.getElementById(id);
+    if(prop.style.display==="none")
+        {
+
+        	prop.style.display="block";
+
+
+
+        }
+    else{
+        prop.style.display="none";
+    }
+}
+function changeimage()
+{
+var image=document.getElementById("bulb");
+if(image.src.match('bulbon'))
+{
+image.src="https://www.w3schools.com/js/pic_bulboff.gif";
+   }
+   else
+   {
+   	image.src="https://www.w3schools.com/js/pic_bulbon.gif";
+   }
+
+}
+
+function changeimage1()
+{
+var image=document.getElementById("bulb2");
+if(image.src.match('bulbon'))
+{
+image.src="https://www.w3schools.com/js/pic_bulboff.gif";
+   }
+   else
+   {
+   	image.src="https://www.w3schools.com/js/pic_bulbon.gif";
+   }
+
+}
+    function changeimage2()
+{
+var image=document.getElementById("bulb3");
+if(image.src.match('bulbon'))
+{
+image.src="https://www.w3schools.com/js/pic_bulboff.gif";
+   }
+   else
+   {
+   	image.src="https://www.w3schools.com/js/pic_bulbon.gif";
+   }
+
+}
+
+function changefan()
+{
+var image=document.getElementById("fan");
+if(image.src.match('524/f3afc3149e'))
+{
+image.src="https://png.pngtree.com/svg/20170616/74362b249c.svg";
+   }
+   else
+   {
+   	image.src="https://png.pngtree.com/svg/20170524/f3afc3149e.svg";
+   }
+
+}
+
+function changeAc()
+{
+var image=document.getElementById("ac");
+if(image.src==="https://cdn.pixabay.com/photo/2018/08/04/16/47/air-conditioner-3583990__340.png")
+{
+image.src="http://mrcoolsxm.com/portals/0/Images/Home/13-05248_B-400.png";
+   }
+   else
+   {
+   	image.src="https://cdn.pixabay.com/photo/2018/08/04/16/47/air-conditioner-3583990__340.png";
+   }
+
+}
+    
+function changeCook()
+{
+var image=document.getElementById("Cooker");
+if(image.src==="https://cdn2.iconfinder.com/data/icons/kitchen-and-cooking-2/200/141-512.png")
+{
+image.src="https://cdn4.iconfinder.com/data/icons/thin-food-cooking/24/thin-1429_cooking_boiling_boil_water-512.png";
+   }
+   else
+   {
+   	image.src="https://cdn2.iconfinder.com/data/icons/kitchen-and-cooking-2/200/141-512.png";
+   }
+
+}
+
+function changefan1()
+{
+var image=document.getElementById("fan2");
+if(image.src.match('524/f3afc3149e'))
+{
+image.src="https://png.pngtree.com/svg/20170616/74362b249c.svg";
+   }
+   else
+   {
+   	image.src="https://png.pngtree.com/svg/20170524/f3afc3149e.svg";
+   }
+
+}
+
+function changeTv()
+{
+var image=document.getElementById("tv");
+if(image.src==="http://www.sclance.com/backgrounds/tv-transparent-background/tv-transparent-background_2274459.png")
+{
+image.src="https://ui-ex.com/images/transparent-tv-clear-background.png";
+   }
+   else
+   {
+   	image.src="http://www.sclance.com/backgrounds/tv-transparent-background/tv-transparent-background_2274459.png";
+   }
+
+}
+    
+    function changeHeat()
+{
+var image=document.getElementById("heater");
+if(image.src==="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiW9-_mXaLpQhhxTpZKwHz8Gb0O0gKaTnagDQBfbtf6eUbcRKm")
+{
+image.src="https://image.flaticon.com/icons/png/512/127/127829.png";
+   }
+   else
+   {
+   	image.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiW9-_mXaLpQhhxTpZKwHz8Gb0O0gKaTnagDQBfbtf6eUbcRKm";
+   }
+
+}
+</script>
+<style >
+    h1
+    {
+        font-family: cursive;
+        text-align: center;
+        color:rgb(245, 167, 66);
+    }
+    div
+    {
+        background-color: rgba(11,1,1,0.1);
+
+    }
+    div:onclick
+    {
+    	transition-duration: 5s;
+
+    }
+    body
+    {
+                background-color: rgb(25, 25, 25);
+                background-size: cover;
+   
+                background-image: url("https://tyreehouseplans.com/wp-content/uploads/2015/03/ganache-front.jpg");
+                background-repeat: no-repeat;
+                background-blend-mode: soft-light;
+                color: rgb(205, 217, 130);
+                text-align: center;
+                
+               /*index:  background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/04/53/59/0158620b83d5f95.jpg");
+                background-repeat: no-repeat;
+        background-size: cover;*/
+
+    }
+    /*body::after
+    {
+
+    }*/
+    sub
+    {
+        font-size: .5em;
+    }
+.fans{
+margin: 1%;
+}
+.lamp{
+margin: 1%;
+}
+</style>
+
+</head>
+<body class="drop">
+    <h1>Welcome to your Smart Home<sub>powered by BoltIOT</sub></h1>
+    <h2  >Living Area
+<img  onclick="cDisp('l1')" style="width: 15px" src="https://png.pngtree.com/svg/20160615/b88822a09c.svg"></h2>
+<div id="l1" class="living" style="display:none">
+
+<img id="bulb" class="lamp" title="Light" onclick="changeimage()"src="https://www.w3schools.com/js/pic_bulboff.gif">
+
+<img id="fan" class="fans" title="Fan" style="width: 155px"  onclick="changefan()"src="https://png.pngtree.com/svg/20170616/74362b249c.svg">
+
+
+<img id="tv"title="T.V" style="width:300px"  onclick="changeTv()" src="http://www.sclance.com/backgrounds/tv-transparent-background/tv-transparent-background_2274459.png">
+</div>
+    <br>
+    <br>
+    <br>
+    <br>
+   <h2 style="display: inline">Bed Room
+<img  onclick="cDisp('b1')" style="width: 15px" src="https://png.pngtree.com/svg/20160615/b88822a09c.svg"></h2>
+<div id="b1" class="bed_room" style="display: none">
+
+<img id="bulb2" class="lamp" title="Light" onclick="changeimage1()"src="https://www.w3schools.com/js/pic_bulboff.gif">
+
+<img id="fan2" class ="fans" title="Fan" style="width: 155px"  onclick="changefan1()"src="https://png.pngtree.com/svg/20170616/74362b249c.svg">
+
+<img id="ac"title="A.C" style="width:300px"  onclick="changeAc()" src="http://mrcoolsxm.com/portals/0/Images/Home/13-05248_B-400.png">
+</div>
+    <br>
+    <br>
+    <br>
+    <br>
+   <h2 style="display: inline">Home Appliances
+<img  onclick="cDisp('h1')" style="width: 15px" src="https://png.pngtree.com/svg/20160615/b88822a09c.svg"></h2>
+<div id="h1" style="display: none">
+    <img id="bulb3" class="lamp" title="Light" onclick="changeimage2()"src="https://www.w3schools.com/js/pic_bulboff.gif">
+    
+    <img id="heater"title="Heater" style="width:180px"  onclick="changeHeat()" src="https://image.flaticon.com/icons/png/512/127/127829.png">
+    
+    
+    <img id="Cooker"title="Cooker" style="width:200px"  onclick="changeCook()" src="https://cdn2.iconfinder.com/data/icons/kitchen-and-cooking-2/200/141-512.png">
+
+
+</div>
+
+
+</body>
